@@ -19,8 +19,9 @@ steps:
     ls -lah
     ls /Applications
     df -h
+    ls -lah /Users/vsts/agent/2.150.0/work
+    du -sh /Users/vsts/agent/2.150.0/work/*
     xcodebuild -version
-    xcodebuild -showsdks
     sysctl -n machdep.cpu.brand_string  # CPU type info
     sysctl -n hw.ncpu  # CPU cores, including logical CPUs.
     sysctl -n hw.memsize  # memory size
