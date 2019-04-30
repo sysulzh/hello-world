@@ -15,6 +15,7 @@ steps:
 
 - script: |
     ls /Applications
+    df -h
     xcodebuild -version
     xcodebuild -showsdks
   displayName: 'Run a multi-line script'
