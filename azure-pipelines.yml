@@ -16,17 +16,16 @@ steps:
 
 - script: |
     ls -lah /Users/vsts/agent/2.150.0
-    du -sh /Users/vsts/agent/2.150.0/*
     ls -lah /Users/vsts
     ls -lah /Users/vsts/agent
     mkdir output
-    cp /Users/vsts/agent/2.150.0.tgz output
+#    cp /Users/vsts/agent/2.150.0.tgz output
   displayName: 'Verify script'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathtoPublish: 'output'
-    artifactName: drop
+#- task: PublishBuildArtifacts@1
+#  inputs:
+#    pathtoPublish: 'output'
+#    artifactName: drop
 
 - script: |
     pwd
