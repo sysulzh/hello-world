@@ -20,9 +20,9 @@ steps:
     #ls -lah /Users/vsts
     #ls -lah /Users/vsts/agent
     mkdir output
-    cp -r /Users/vsts/agent/2.150.0/scripts output
-    tar -zcf output/scripts.tar.gz output/scripts
-    rm -rf output/scripts
+    #cp -r /Users/vsts/agent/2.150.0/scripts output
+    #tar -zcf output/scripts.tar.gz output/scripts
+    #rm -rf output/scripts
 #    cp /Users/vsts/agent/2.150.0.tgz output
   displayName: 'Verify script'
 
